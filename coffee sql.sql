@@ -1,0 +1,12 @@
+#Question:1 How much total revenue has the coffee shop generated?SELECT ROUND(SUM(`money(Rs)`),2) AS total_revenue FROM coffee_data;
+#Question:2 SELECT COUNT(*) AS total_orders FROM coffee_data;
+#Question:3 SELECT coffee_name, ROUND(SUM(`money(Rs)`),2) AS revenue FROM coffee_data GROUP BY coffee_name ORDER BY revenue DESC;
+#Question:4 SELECT coffee_name, COUNT(*) AS total_orders FROM coffee_data GROUP BY coffee_name ORDER BY total_orders DESC;
+#Question:5 SELECT cash_type, ROUND(SUM(`money(Rs)`),2) AS revenue FROM coffee_data GROUP BY cash_type;
+#Question:6 SELECT Weekday, ROUND(SUM(`money(Rs)`),2) AS revenue FROM coffee_data GROUP BY Weekday ORDER BY revenue DESC LIMIT 1;
+#Question:7 SELECT Weekday, ROUND(SUM(`money(Rs)`),2) AS revenue FROM coffee_data GROUP BY Weekday ORDER BY revenue DESC;
+#Question:8 SELECT Month_name, ROUND(SUM(`money(Rs)`),2) AS revenue FROM coffee_data GROUP BY Month_name, Monthsort ORDER BY Monthsort;
+#Question:9 SELECT hour_of_day, COUNT(*) AS total_orders FROM coffee_data GROUP BY hour_of_day ORDER BY total_orders DESC;
+#Question:10 SELECT coffee_name, COUNT(*) AS total_orders FROM coffee_data WHERE Time_of_Day='Morning' GROUP BY coffee_name ORDER BY total_orders DESC;
+#Question:11 SELECT coffee_name, COUNT(*) AS total_orders FROM coffee_data WHERE Time_of_Day='Afternoon' GROUP BY coffee_name ORDER BY total_orders DESC;
+#Question:12 SELECT coffee_name, COUNT(*) AS total_orders FROM coffee_data WHERE Time_of_Day='Night' GROUP BY coffee_name ORDER BY total_orders DESC;
